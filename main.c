@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <math.h>
 
-#define FONT_SIZE    18
+#define FONT_SIZE    20
 #define FONT_SPACING 3
 
 float sdBox2D(Vector2 p, Vector2 b) {
@@ -37,7 +37,7 @@ int main(void) {
 		FLAG_VSYNC_HINT);
     InitWindow(800, 800, "Earth");
 
-    Font font = GetFontDefault();
+    Font font = LoadFont("Quivira.otf");
     Texture2D cosmos = LoadTexture("cosmos.png");
     Texture2D earth = LoadTexture("earth.png");
 	const char *text = LoadFileText("earth.txt");
